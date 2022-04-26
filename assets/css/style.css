@@ -1,0 +1,412 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+
+/* 
+Font: Lora/ Work sans
+Farbe: #2e2e2e / #fff / #000 / #1d2c2f 
+
+font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+/* ========================================================================= 
+                            GENERAL STYLES
+=========================================================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ========================================================================= 
+                            FONT STYLES
+=========================================================================*/
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1,h2,h3,label,footer {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-size: 8rem;
+    font-weight: 500;
+    letter-spacing: 0.5em;
+}
+
+h2 {
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+/* ========================================================================= 
+                            HEADER STYLES
+=========================================================================*/
+
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header section div:first-of-type {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+header section div:first-of-type { 
+    letter-spacing: 0.5em;
+}
+
+.img {
+    flex-basis: 60%;
+}
+
+/* ========================================================================= 
+                            NAVBAR STYLES
+=========================================================================*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 5%;
+    background-color: #2e2e2e;
+    position: sticky;
+    top:0;
+}
+
+.navbar img {
+    width: 5%;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 12vw;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nav_menu {
+    display: none;
+}
+
+.nav_menu span {
+    display: block;
+    background-color: #fff;
+    height: 0.25rem;
+    width: 2rem;
+    margin: 1vh 0;
+}
+
+.nav_menu:hover > span {
+    background-color: red;
+    cursor:grab;
+    transition: 0.5s all;
+}
+
+
+/* ========================================================================= 
+                            SECTION STORY STYLES
+=========================================================================*/
+
+.section_story {
+    background-color: #2e2e2e;
+    color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 15vh 0;
+}
+
+.section_story article {
+    padding: 10vh 2.5%;
+    flex-basis: 50%;
+}
+
+.section_story article h2 {
+    margin: 0 0 2vh 0;
+}
+
+.section_story article p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 0 0 2.5vh 0;;
+}
+
+.section_story-img {
+    flex-basis: 50%;
+}
+
+/* ========================================================================= 
+                            SECTION featured STYLES
+=========================================================================*/
+
+.section_featured article {
+    margin: 20vh 25%;
+
+}
+
+.section_featured article h2 {
+    text-align: center;
+    margin-bottom: 2.5vh;
+}
+
+.section_featured article p {
+    font-size: 2rem;
+    word-spacing: 1rem;
+    line-height: 1.5em;
+}
+
+.flex_gallerie {
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 5% 10vh 5%;
+}
+
+.flex_gallerie div {
+    flex-basis: 30%;
+}
+
+.flex_gallerie div img {
+    width: 100%;
+    min-width: 350px;
+}
+
+.flex_gallerie div figcaption {
+    text-align: center;
+    color: #818181;
+    font-size: 2rem;
+}
+
+.section_featured-video {
+    text-align: center;
+    margin-bottom: 15vh;
+}
+
+
+/* ========================================================================= 
+                            SECTION Contact STYLES
+=========================================================================*/
+
+.section_contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 12vh 10% 12vh 5%;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.section_contact article {
+    flex-basis: 50%;
+    align-self: center;
+}
+
+.section_contact article h2 {
+    margin-bottom: 5vh;
+}
+
+.section_contact article p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 3vh;
+    word-spacing: 1rem;
+}
+
+.section_contact form {
+    flex-basis: 30%;
+}
+
+.section_contact form input{
+    width: 100%;
+    margin-bottom: 5vh;
+    font-size: 1.6rem;
+    padding: 1vh 1%;
+    border-radius: 5px;
+}
+
+.section_contact textarea {
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 5vh;
+    border-radius: 5px;
+    padding: 1vh 1%
+}
+
+.section_contact form div label {
+    font-size: 2rem;
+    line-height: 1.5em;
+}
+
+.section_contact form div input[type="submit"] {
+    width: 25%;
+    min-width: 100px;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.section_contact form div input[type="submit"]:hover {
+    width: 35%;
+    background-color: #fff;
+    color: #000;
+    transition: 0.25s all;
+    cursor:grab;
+}
+
+/* ========================================================================= 
+                            SECTION Contact STYLES
+=========================================================================*/
+
+
+footer {
+    background-color: #1d2c2f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 5vh 5%;
+}
+
+footer div:nth-of-type(3) ul {
+    list-style: none;
+    display: flex;
+    gap: 5vw;
+}
+
+footer div:nth-of-type(3) ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* ========================================================================= 
+                            MEDIA QUERIES
+=========================================================================*/
+
+
+@media only screen and (max-width: 600px) {
+    
+    /* ===================================================
+                    HEADER
+    ========================================================*/
+
+    header section {
+        flex-direction: column;
+    }
+
+    header section div:first-of-type{
+        margin: 20vh 0;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+        /* ===================================================
+                    NAVBAR
+    ========================================================*/
+
+    .nav_menu {
+        display: block;
+    }
+
+    .navbar img {
+        width: 100px;
+    }
+
+    .navbar_nav {
+        position: fixed;
+        text-align: center;
+        top:15vh;
+        right:-100%;
+        background-color: #2e2e2ec8;
+        padding: 2vh 1%;
+        border-radius: 10px;
+        transition: 1s all;
+    }
+
+    .navbar_show {
+        right: 5%;
+        transition: 1s all;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+    }
+
+    .navbar nav ul li {
+        border-bottom: 1px solid white;
+    }
+
+    
+
+        /* ===================================================
+                    STORY
+    ========================================================*/
+
+    .section_story {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 15vh 0 5vh 0;
+    }
+
+
+            /* ===================================================
+                    FEATURES
+    ========================================================*/
+
+    .flex_gallerie {
+        flex-direction: column;
+        gap: 5vh;
+        margin: 0 0 15vh 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    /* ===================================================
+                    CONTACT
+    ========================================================*/
+
+    .section_contact {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    footer div {
+        margin-bottom: 2.5vh;
+    }
+
+    footer div ul {
+        margin-bottom: 5vh;
+        flex-direction: column;
+    }
+
+}
