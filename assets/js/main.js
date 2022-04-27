@@ -6,6 +6,7 @@ const inputTextarea = document.getElementById('input_msg');
 const navMenu = document.querySelector('.nav_menu');
 const navNav = document.querySelector('.navbar_nav');
 const navLink = document.querySelector('nav_link');
+const overlay = document.querySelector('.overlay');
 
 function showValue() {
     console.log(inputName.value);
@@ -17,10 +18,12 @@ function showValue() {
 navMenu.addEventListener('click', function() {
     console.log('test');
     navNav.classList.toggle('navbar_show');
+    overlay.classList.toggle('hidden');
 })
 
-// document.body.addEventListener('click',function(){
-//     console.log('test');
-//     navNav.classList.remove('navbar_show');
-// })
+overlay.addEventListener('click',function(){
+    console.log('test');
+    navNav.classList.remove('navbar_show');
+    overlay.classList.add('hidden');
+})
 
